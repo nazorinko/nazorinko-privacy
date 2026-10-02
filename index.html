@@ -33,9 +33,9 @@
 <body>
 
 <h1>なぞりんこ プライバシーポリシー</h1>
-<p class="updated">最終更新日：2026年9月9日</p>
+<p class="updated">最終更新日：2026年10月2日</p>
 
-<p>「なぞりんこ」（以下「本アプリ」。パッケージ名 <code>com.nazorinko.app</code>）は、
+<p>「なぞりんこ」（以下「本アプリ」。アプリID <code>com.nazorinko.app</code>、Android 版・iOS 版共通）は、
 未就学のお子さまが もじ と ことば に親しむための学習アプリです。
 本アプリは、利用者から個人情報を収集しません。以下、その取り扱いについて説明します。</p>
 
@@ -43,9 +43,9 @@
 <strong>要点</strong>
 <ul>
   <li>個人情報・利用履歴を収集しません。</li>
-  <li>すべてのデータは端末内のみに保存され、外部へ送信されません。</li>
+  <li>すべてのデータ（写真パズルに使った写真を含む）は端末内のみに保存され、本アプリが外部のサーバーへ送信することはありません。</li>
   <li>広告・解析（アクセス解析）ツールは一切使用していません。</li>
-  <li>通信を行うのは、「フルバージョン」を購入・復元するときの Google Play による確認のみです。</li>
+  <li>通信を行うのは、「フルバージョン」を購入・復元するときの、ストア（Android 版は Google Play、iOS 版は App Store）による確認のみです。</li>
 </ul>
 </div>
 
@@ -60,30 +60,52 @@
   <li>あつめたシール、なぞり書きの進み具合、作った「さくぶん」</li>
   <li>音量・読み上げ・BGM などの設定</li>
   <li>「あそぶ ひと」として保護者が入力したニックネーム（本名の入力は不要です）</li>
+  <li>「しゃしんから つくる」パズルで使った写真（カメラで撮った写真、またはアルバムから選んだ写真を、
+      パズル用に小さく切り取ったもの。1人あたり最大10枚）</li>
 </ul>
-<p>これらはアプリの削除、または端末の設定からアプリのデータを消去することで、いつでも削除できます。</p>
+<p>記録が消えてしまうことを防ぐため、本アプリはこれらの情報の控え（バックアップファイル）を、
+端末内の本アプリ専用の領域にも保存します。この控えは、端末の設定で有効になっている場合、
+OS の標準のバックアップ機能（iOS の iCloud バックアップ、Android の Google によるバックアップ）の対象となり、
+機種変更の際に引き継ぐことができます。これは OS の機能によるもので、本アプリが独自のサーバーへ送信するものではありません。</p>
+<p>これらはアプリの削除、または端末の設定からアプリのデータを消去することで、いつでも削除できます
+（OS のバックアップに含まれる控えは、端末やアカウントのバックアップ設定から管理できます）。</p>
 
 <h2>3. 通信について</h2>
 <p>本アプリが通信を行うのは、次の場合のみです。</p>
 <ul>
-  <li><strong>「フルバージョン」の購入・復元</strong>：Google Play（Google LLC）を通じて購入手続きと所有状態の確認を行います。
-      決済は Google が処理し、本アプリがクレジットカード番号などの決済情報を受け取ることはありません。</li>
+  <li><strong>「フルバージョン」の購入・復元</strong>：購入手続きと所有状態の確認を、
+      Android 版では Google Play（Google LLC）、iOS 版では App Store（Apple Inc.）を通じて行います。
+      決済はそれぞれのストアが処理し、本アプリがクレジットカード番号などの決済情報を受け取ることはありません。</li>
 </ul>
-<p>この処理には Google Play 課金サービスが用いられます。Google による情報の取り扱いについては
-<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシー ポリシー</a>
+<p>この処理には、Android 版では Google Play 課金サービス、iOS 版では App Store のアプリ内課金が用いられます。
+各社による情報の取り扱いについては
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシー ポリシー</a>、
+<a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">Apple のプライバシーポリシー</a>
 をご確認ください。本アプリには、これ以外の第三者提供の SDK・サービスは組み込まれていません。</p>
+<p>なお、録音した音声が用意されていない言葉は、端末に標準で備わっている読み上げ機能で読み上げることがあります。</p>
 
 <h2>4. 権限について</h2>
+<p><strong>Android 版</strong></p>
 <ul>
-  <li><code>INTERNET</code>／<code>com.android.vending.BILLING</code>：上記「フルバージョン」の購入・復元にのみ使用します。</li>
+  <li><code>INTERNET</code>／<code>ACCESS_NETWORK_STATE</code>／<code>com.android.vending.BILLING</code>：
+      上記「フルバージョン」の購入・復元にのみ使用します。</li>
+  <li>写真パズルの写真は、端末のカメラアプリや写真の選択画面を通じて受け取るため、
+      カメラ・ストレージの権限は要求しません。</li>
 </ul>
-<p>カメラ・マイク・位置情報・連絡先・ストレージなどの権限は要求しません。</p>
+<p><strong>iOS 版</strong></p>
+<ul>
+  <li>カメラ：写真パズルの写真を撮るときに使用します。</li>
+  <li>写真ライブラリ：写真パズルにする写真をアルバムから選ぶときに使用します。</li>
+  <li>いずれも、その機能を使うときにだけ許可をお願いします。許可しなくても、ほかの機能はすべて使えます。</li>
+</ul>
+<p>マイク・位置情報・連絡先などの権限は要求しません。</p>
 
 <h2>5. お子さまのプライバシー</h2>
 <p>本アプリは未就学のお子さまの利用を想定して設計されています。
 お子さまから個人情報を収集することはありません。アプリ内に広告は表示されません。
 お子さまが誤って外部サイトへ移動しないよう、外部リンクは「このアプリについて」内の
-本ポリシー・権利表記などに限っており、購入手続きは Google Play の画面に委ねています。</p>
+本ポリシー・権利表記などに限っています。「フルバージョン」の購入ボタンの手前には、
+保護者の方に答えていただく確認（かんたんな計算）を設けており、購入手続きはストア（Google Play／App Store）の画面に委ねています。</p>
 
 <h2>6. 第三者への提供</h2>
 <p>収集する個人情報がないため、第三者へ提供する情報はありません。</p>
@@ -99,12 +121,17 @@
 <hr style="margin:40px 0 20px; border:none; border-top:1px solid #e6e0d6;">
 <p class="en"><strong>English summary.</strong> “Nazorinko” (<code>com.nazorinko.app</code>) is a writing/word
 learning app for preschool children. It collects no personal information and shows no ads.
-All data (stickers, tracing progress, compositions, settings, and a parent-entered nickname)
-is stored only on the device and is never transmitted. The only network activity is Google Play
-Billing, used solely to purchase or restore the one-time "Full Version" unlock; payment is handled
-by Google and the app never receives card details. See
-<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s Privacy Policy</a>
-for Google’s handling of payment data. Contact: nazorinko@gmail.com.</p>
+All data (stickers, tracing progress, compositions, settings, a parent-entered nickname, and photos
+used for photo puzzles) is stored only on the device and is never sent to any server by the app.
+A backup copy is kept in the app's private storage and may be included in the operating system's own
+backup (iCloud Backup on iOS, Google backup on Android) if enabled in the device settings.
+The only network activity is the store's billing service — Google Play Billing on Android, App Store
+In-App Purchase on iOS — used solely to purchase or restore the one-time "Full Version" unlock, which sits
+behind a parental check; payment is handled by the store and the app never receives card details.
+On iOS, camera and photo library access are requested only when making a photo puzzle.
+See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s Privacy Policy</a>
+and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>
+for their handling of payment data. Contact: nazorinko@gmail.com.</p>
 
 </body>
 </html>
